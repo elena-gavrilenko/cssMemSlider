@@ -1,3 +1,96 @@
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+input[type="radio"i] {
+    visibility: hidden;
+}
+
+.slider {
+    max-width: 85rem;
+    max-height: 80rem;
+    font-family: "Pacifico";
+    letter-spacing: 0.09rem;
+    color: #FFFFFF;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(5, 97, 51);
+    border-radius: 3%;
+}
+
+.slider__wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr, 1fr, 1fr;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0 2rem 2rem 2rem;
+}
+
+.slider__images {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.slider__footer {
+    height: 11rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.slider__captions {
+    width: 42rem;
+    height: 100%;
+    font-size: 0;
+}
+.slider__button_one:checked~.slider__footer .slider__caption_one,
+.slider__button_two:checked~.slider__footer .slider__caption_two,
+.slider__button_three:checked~.slider__footer .slider__caption_three,
+.slider__button_four:checked~.slider__footer .slider__caption_four,
+.slider__button_five:checked~.slider__footer .slider__caption_five {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+}
+.slider__img {
+    border-radius: 1%;
+    width: 0;
+}
+.slider__button_one:checked~.slider__images .slider__img_one,
+.slider__button_two:checked~.slider__images .slider__img_two,
+.slider__button_three:checked~.slider__images .slider__img_three,
+.slider__button_four:checked~.slider__images .slider__img_four,
+.slider__button_five:checked~.slider__images .slider__img_five {
+    width: 100%;
+}
+.slider__button_one:checked~.slider__footer .slider__radio_one,
+.slider__button_two:checked~.slider__footer .slider__radio_two,
+.slider__button_three:checked~.slider__footer .slider__radio_three,
+.slider__button_four:checked~.slider__footer .slider__radio_four,
+.slider__button_five:checked~.slider__footer .slider__radio_five {
+    background-color: rgb(128, 248, 188);
+}
+.slider__labels {
+    width: 20rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.slider__labels:hover {
+    cursor: pointer;
+
+}
+.slider__radio {
+    width: 2rem;
+    height: 2rem;
+    border: 0.1rem solid rgb(145, 238, 226);
+    border-radius: 50%;
+}
+.slider__radio:hover {
+    cursor: pointer;
+    box-shadow: 0 0 2rem aqua;
+
 }
