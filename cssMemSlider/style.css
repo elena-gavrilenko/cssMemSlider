@@ -91,8 +91,8 @@ input[type="radio"i] {
     width: 100%;
     display: grid;
     grid-template-rows: 1fr;
-  grid-template-columns: 1fr 1fr;
-  justify-items: flex-end; 
+    grid-template-columns: 1fr 1fr;
+    justify-items: flex-end; 
 }   
 .slider__text {
     grid-row-start: 1;
@@ -130,7 +130,6 @@ input[type="radio"i] {
         width: 100%;
         height: calc(100vh / 8);
         order: 2;
-        text-align: center;
     }
 }
 .slider__button_one:checked~.slider__footer .slider__caption_one,
